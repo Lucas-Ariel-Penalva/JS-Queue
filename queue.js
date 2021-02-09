@@ -17,13 +17,13 @@ class Queue{
     enqueue(element){
         if(typeof element === "string" || typeof element === "number"){
         this.collection.push(element);
-        console.log(`Placed "${element}" into the Queue.`);
+        console.log(`Placed "${element}" in the Queue.`);
         } else throw new TypeError("The Queue only accepts Strings or Numbers.");
     };
 
     dequeue(){
       let dequeuedElement = this.collection.shift();
-      console.log(`Dequeued "${dequeuedElement}" from the Queue.`);
+      console.log(`Dequeued "${dequeuedElement}".`);
       return dequeuedElement; 
     };
 
